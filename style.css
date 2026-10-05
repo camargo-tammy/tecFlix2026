@@ -1,18 +1,75 @@
-.btn-trailer {
+/* Reset básico para garantir alinhamento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141414;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #000000;
+}
+
+header .logo {
+    color: #e50914;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Seção Hero */
+.hero {
+    padding: 60px 40px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* Estilo e correção de clique no Botão */
+.btn-play {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 12px 28px;
     background-color: #e50914;
     color: #ffffff;
     text-decoration: none;
-    font-family: Arial, sans-serif;
     font-weight: bold;
+    font-size: 16px;
     border-radius: 4px;
-    cursor: pointer; /* Garante o ponteiro de clique */
-    position: relative; 
-    z-index: 10; /* Garante que o botão fique na frente de banners ou imagens */
-    transition: background-color 0.3s ease;
+
+    /* Propriedades vitais para o clique funcionar */
+    position: relative;
+    z-index: 99;
+    cursor: pointer;
+    pointer-events: auto;
 }
 
-.btn-trailer:hover {
+.btn-play:hover {
     background-color: #b81d24;
 }
