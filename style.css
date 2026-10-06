@@ -1,5 +1,30 @@
 body{
     background-color: rgb(17, 17, 17);
     color: azure;
-  font-family: "Geostar Fill", serif;
+    font-family: "Sonsie One", system-ui;
+    margin: 0px;
+}
+h1{
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
+}
+
+header{
+    border: dashed 5px rgb(32, 170, 250);
+    padding: 20px;
+    font-size: 32px;
+    color: beige;
+}
+
+section{
+    background-color: rgb(8, 8, 169);
+    padding-bottom: 80px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.chamada-texto{
+    margin-right:  5%;
 }
