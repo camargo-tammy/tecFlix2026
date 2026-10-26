@@ -28,3 +28,13 @@ section{
 .chamada-texto{
     margin-right:  5%;
 }
+img{
+    height: 200px;
+    width: 300px;
+}
+.categoria-vdeos{
+    display: flex;
+    overflow: auto;
+    gap: 10px;
+    max-width: 100%;
+}
